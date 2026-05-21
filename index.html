@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login And Sign Up Form By Ramy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Exo 2", sans-serif;
+    };
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
+    <form action="#" class="space-y-6 flex flex-col items-center">
+      <h3 class="text-4xl font-bold text-center text-gray-800 my-4">
+        Login
+      </h3>
+      <input
+          type="email"
+          id="email"
+          placeholder="Enter email address"
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      <input
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <a href="#" class="text-center text-blue-500 hover:text-blue-700">Forgot Password?</a>
+      <button
+        type="submit"
+        class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition"
+      >
+        Login
+      </button>
+      <p class="text-center text-gray-600">
+        Don't have an account? <a href="sign-up.html" class="text-blue-500 hover:text-blue-700">Sign up</a>
+      </p>
+      <div class="flex items-center w-full max-w-md mx-auto">
+        <div class="flex-grow border-t border-gray-300"></div>
+
+        <span class="mx-4 text-gray-400 text-sm font-medium">
+          Or
+        </span>
+
+        <div class="flex-grow border-t border-gray-300"></div>
+      </div>
+      <button class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-3 hover:bg-blue-700 transition w-full bg-blue-800 text-white">
+        <i class="fab fa-facebook-f text-white"></i>
+        <span class="ml-2 text-white">Login with Facebook</span>
+      </button>
+      <button class="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-3 hover:bg-gray-200 transition w-full bg-white text-black">
+        <img src="../Log/asset/googles.png" alt="" class="w-5 h-5" />
+        <span class="ml-2 text-black">Login with Google</span>
+      </button>
+    </form>
+  </div>
+</body>
+</html>
